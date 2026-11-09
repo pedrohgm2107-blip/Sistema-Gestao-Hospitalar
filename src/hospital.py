@@ -50,11 +50,11 @@ def formatar_cpf(cpf: str) -> str:
 
 
 def validar_data(data: str) -> str:
+    """Valida a data e devolve no formato padrão AAAA-MM-DD (com zeros)."""
     try:
-        datetime.strptime(data, "%Y-%m-%d")
+        return datetime.strptime(data.strip(), "%Y-%m-%d").strftime("%Y-%m-%d")
     except ValueError:
         raise ValueError("Data inválida. Use o formato AAAA-MM-DD.") from None
-    return data
 
 
 # ------------------------------------------------------------------- modelos
