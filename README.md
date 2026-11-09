@@ -39,7 +39,7 @@ O sistema já inicia com dados fictícios de exemplo. Para ver o relatório, esc
     • 2023-11-20 | Dr. Marcelo | Fratura no braço
 ```
 ## Testes
-Os 15 testes automáticos cobrem formatação de CPF e data, busca sem acentos, Bubble Sort, regras da árvore (raiz única e CRM único), consultas no prontuário e no grafo, contagem recursiva e relatório por ano.
+Os 18 testes, além de salvar e carregar os dados em JSON automáticos cobrem formatação de CPF e data, busca sem acentos, Bubble Sort, regras da árvore (raiz única e CRM único), consultas no prontuário e no grafo, contagem recursiva e relatório por ano.
 
 ```powershell
 python -m venv venv
