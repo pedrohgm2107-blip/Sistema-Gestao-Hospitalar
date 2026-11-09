@@ -38,7 +38,15 @@ O sistema já inicia com dados fictícios de exemplo. Para ver o relatório, esc
   ↳ MÊS: 11 - Novembro
     • 2023-11-20 | Dr. Marcelo | Fratura no braço
 ```
+## Testes
+Os 15 testes automáticos cobrem formatação de CPF e data, busca sem acentos, Bubble Sort, regras da árvore (raiz única e CRM único), consultas no prontuário e no grafo, contagem recursiva e relatório por ano.
 
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+python -m pip install pytest
+python -m pytest
+```
 ## Limitações
 - Os dados ficam só em memória e se perdem ao fechar o programa.
 - O CPF é validado apenas pelo formato (11 dígitos), sem os dígitos verificadores.
@@ -46,5 +54,4 @@ O sistema já inicia com dados fictícios de exemplo. Para ver o relatório, esc
 - Todos os dados são fictícios.
 
 ## Próximos passos
-- Testes automatizados com pytest.
-- Salvar e carregar os dados em arquivo JSON.
+ - Salvar e carregar os dados em arquivo JSON.
